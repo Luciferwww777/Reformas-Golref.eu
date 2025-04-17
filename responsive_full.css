@@ -1,0 +1,93 @@
+
+/* Базові стилі (мобільні за замовчуванням) */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section, header, footer, nav, main, div {
+    padding: 10px;
+}
+
+input, button, select, textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* Телефони (до 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Маленькі планшети (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    input, button {
+        max-width: 100%;
+    }
+}
+
+/* Великі планшети / маленькі ноутбуки (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 17px;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    section, header, footer {
+        padding: 20px;
+    }
+}
+
+/* ПК і великі екрани (1025px+) */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin: 10px 15px;
+    }
+
+    section, header, footer {
+        padding: 30px 60px;
+    }
+
+    input, button {
+        max-width: 600px;
+    }
+}
